@@ -1861,7 +1861,11 @@ enum Pipelines: string
                 "$text": {
                     "$search": "CAF\u00c9",
                     "$diacriticSensitive": true
-                },
+                }
+            }
+        },
+        {
+            "$project": {
                 "score": {
                     "$meta": "textScore"
                 }
